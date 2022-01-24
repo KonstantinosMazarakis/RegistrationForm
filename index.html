@@ -8,74 +8,74 @@
   </head>
   <body>
     <h1>Registration Form</h1>
-    <form action="/process" method="post">
+    <form>
       <div>
-        <label>Fist Name: *</label>
-        <input type="text" name="first_name" />
+        <label for="first_name">Fist Name: *</label>
+        <input type="text" name="first_name" id="first_name" />
       </div>
       <br />
       <div>
-        <label>Last Name: *</label>
-        <input type="text" name="last_name" />
+        <label for="last_name">Last Name: *</label>
+        <input type="text" name="last_name" id="last_name"/>
       </div>
       <br />
       <div>
-        <label>Email Address: *</label>
-        <input type="text" name="email" />
+        <label for="email">Email Address: *</label>
+        <input type="text" name="email" id="email"/>
       </div>
       <br />
       <div>
-        <label>Password: *</label>
-        <input type="password" name="password" />
+        <label for="password">Password: *</label>
+        <input type="password" name="password" id="password"/>
       </div>
       <br />
       <div>
-        <label>Confirm Password: *</label>
-        <input type="password" name="confirm_password" />
+        <label for="confirm_password">Confirm Password: *</label>
+        <input type="password" name="confirm_password" id="confirm_password"/>
       </div>
       <br />
       <div>
-        <label>Birthday: </label>
-        <input type="date" name="birthday" />
+        <label for="birthday">Birthday: </label>
+        <input type="date" name="birthday" id="birthday" />
       </div>
       <br />
       <div>
         <label>Gender Identity:</label>
         <br />
-        <input type="radio" name="male" />
-        <label>Male</label>
-        <input type="radio" name="Female" />
-        <label>Female</label>
-        <input type="radio" name="nonbinary" />
-        <label>Non-binary</label>
-        <input type="radio" name="du" />
-        <label>I prefer not to answer</label>
+        <input type="radio" name="gender" id="male" value="male"/>
+        <label for="male">Male</label>
+        <input type="radio" name="gender" id="female" value="female"/>
+        <label for="female">Female</label>
+        <input type="radio" name="gender" id="nonbinary" value="nonbinary"/>
+        <label for="nonbinary">Non-binary</label>
+        <input type="radio" name="gender" id="du" value="du"/>
+        <label for="du">I prefer not to answer</label>
         <br />
       </div>
       <br />
       <div>
-        <label>A short description about myself:</label>
+        <label for="description">A short description about myself:</label>
         <br />
-        <textarea name="text" cols="50" rows="5"></textarea>
+        <textarea name="text" cols="50" rows="5" id="description"></textarea>
       </div>
       <br />
       <div>
-        <label>Favorite Language:</label>
-        <select name="select_language">
-          <option>JavaScript</option>
-          <option>C</option>
-          <option>Python</option>
-          <option>Pascal</option>
+        <label for="selectLanguage">Favorite Language:</label>
+        <select name="select_language" id="selectLanguage">
+          <option value="JavaScript">JavaScript</option>
+          <option value="C">C</option>
+          <option value="Python">Python</option>
+          <option value="Pascal">Pascal</option>
         </select>
       </div>
       <br>
       <div>
-        <input type="checkbox" name="accept">
-        <label>Yes, I would like to receive periodic email updates<label>        
+        <input type="checkbox" name="accept" id="accept">
+        <label for="accept">Yes, I would like to receive periodic email updates</label>        
       </div>
       <br>
       <div>
-        <input type="submit" value="Create Account">
+        <input type="submit" value="Create Account" id="submit">
     </div>
       <br>
       * Indicates a required field
